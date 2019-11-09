@@ -1,0 +1,170 @@
+@import "https://use.fontawesome.com/releases/v5.11.2/css/all.css";
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+}
+.phone {
+  width: 380px;
+  height: 820px;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 20px 30px 45px 30px;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)),
+    url(images/riga.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* box-shadow: opx -500px 100px white inset, 10px -50px 30px #4776e6 inset,
+    10px -50px 70px 10px #8e54e9 inset; */
+  box-shadow: -100px -500px 1000px white inset;
+}
+/* .phonebg {
+  height: 395px;
+} */
+.header {
+  height: 220px;
+}
+.phonestatus,
+.headerbttn,
+.sectoptions,
+.sectalbel,
+.sectcity,
+.sectcity__columnleft,
+.sectcity__solumnright,
+.nav__li {
+  display: flex;
+  justify-content: space-between;
+}
+.phonestatus {
+  margin-bottom: 35px;
+}
+.headerbttn {
+  font-size: 23px;
+}
+.sectoptions {
+  margin-left: 85px;
+  margin-bottom: 30px;
+}
+.sectoptions__pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+}
+#option1 {
+  background: url(images/option1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#option2 {
+  background: url(images/option2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#option3 {
+  background: url(images/option3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#option4 {
+  background-color: #3f67ff;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+.sectalbel {
+  margin-right: 85px;
+}
+.sectlabel__ {
+  border-radius: 20px 20px 20px 0;
+  background-color: #dde4fa;
+  color: #3f67ff;
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.sectcity {
+  height: 100px;
+  width: 315px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.sectcity__columnleft,
+.sectcity__solumnright {
+  flex-direction: column;
+}
+.sectcity__name {
+  font-size: 35px;
+  font-weight: 800;
+}
+.sectcitymap__,
+.sectcity__distance,
+.sectcontent__overview {
+  opacity: 0.3;
+}
+
+.sectcity__love {
+  padding: 15px 0 0 25px;
+}
+
+.sectcity__distance {
+  margin-top: 40px;
+}
+.sectcontent__overview {
+  font-size: 10px;
+  font-weight: 700;
+}
+.sectcontent__blabla {
+  opacity: 0.5;
+  line-height: 2em;
+  padding-right: 30px;
+  font-weight: 600;
+}
+.sectcontent__more {
+  color: #3f67ff;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 45px;
+  align-items: flex-start;
+  position: relative;
+}
+.nav__topbox {
+  height: 40px;
+  border-bottom: 2px solid #e1e6f0;
+}
+.nav__li {
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+}
+.nav__route {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #3f67ff;
+  border: 10px solid #e7ecf2;
+  box-shadow: 0 4px 10px -2px gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#globe {
+  padding-top: 25px;
+  border-top: 2px solid #3f67ff;
+  align-items: top;
+  margin-bottom: 25px;
+}
