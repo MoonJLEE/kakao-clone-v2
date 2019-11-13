@@ -21,6 +21,9 @@ a {
 input:focus {
   outline: none;
 }
+main {
+  overflow: auto;
+}
 .bigScreen {
   position: fixed;
   width: 100%;
