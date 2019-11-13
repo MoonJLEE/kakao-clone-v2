@@ -21,6 +21,9 @@ a {
 input:focus {
   outline: none;
 }
+main {
+  overflow: auto;
+}
 .bigScreen {
   position: fixed;
   width: 100%;
@@ -46,7 +49,7 @@ input:focus {
   }
 }
 .bigScreen__text {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
 }
 .bigScreen__text2 {

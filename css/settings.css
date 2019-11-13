@@ -3,41 +3,72 @@
   text-align: left;
   /* margin-left: 15px; */
 }
-.settings .eachroom {
+/* ::::::::::::::::::::in common:::::::::::::::::::: */
+.settings .eachroom,
+.settings .eachroom-me {
   width: 98%;
-  height: 100px;
   display: flex;
-  justify-content: left;
-  padding: 20px 10px 20px 20px;
-  margin: 10px 0 10px 5px;
-  border-bottom: 0.5px solid rgb(221, 229, 233);
+  align-items: center;
 }
-.settings .eachroom .left {
+.settings .eachroom .left,
+.settings .eachroom-me .left {
   display: flex;
   justify-content: left;
   align-items: center;
 }
-.settings .eachroom .left .prflpic {
+.settings .eachroom .left .content,
+.settings .eachroom-me .left .content {
+  margin-left: 20px;
+}
+/* ::::::::::::::::::::my info:::::::::::::::::::: */
+.settings .eachroom-me {
+  height: 120px;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgb(221, 229, 233);
+  padding-left: 20px;
+  margin: 10px 0 10px 5px;
+}
+.settings .eachroom-me .left .prflpic-me {
   width: 80px;
   height: 80px;
   border-radius: 40px;
+}
+.settings .eachroom-me .left .content .name {
+  padding-bottom: 12px;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+}
+.settings .eachroom-me .bottom-text span {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+.settings .eachroom-me .right span {
+  font-size: 20px;
+  color: black;
+  opacity: 0.4;
+  margin: 0 30px;
+}
+/* ::::::::::::::::::::settings list:::::::::::::::::::: */
+.settings .eachroom {
+  justify-content: left;
+  padding: 10px 15px;
+  margin-top: 20px;
 }
 .settings .eachroom .left i {
   font-size: 20px;
   color: #57b4d2;
   opacity: 0.8;
-  margin: 0 30px;
-}
-.settings .eachroom .left .content {
-  margin-left: 20px;
+  margin: 0 35px;
 }
 .settings .eachroom .left .content .name {
-  padding-bottom: 12px;
+  padding-bottom: 5px;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
 }
 .settings .eachroom .bottom-text span {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   opacity: 0.6;
 }
