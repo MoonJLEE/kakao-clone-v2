@@ -1,0 +1,43 @@
+.topnav .settings {
+  width: 450px;
+  text-align: left;
+  /* margin-left: 15px; */
+}
+.settings .eachroom {
+  width: 98%;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  padding: 20px 10px 20px 20px;
+  margin: 10px 0 10px 5px;
+  border-bottom: 0.5px solid rgb(221, 229, 233);
+}
+.settings .eachroom .left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.settings .eachroom .left .prflpic {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.settings .eachroom .left i {
+  font-size: 20px;
+  color: #57b4d2;
+  opacity: 0.8;
+  margin: 0 30px;
+}
+.settings .eachroom .left .content {
+  margin-left: 20px;
+}
+.settings .eachroom .left .content .name {
+  padding-bottom: 12px;
+  display: block;
+  font-size: 20px;
+}
+.settings .eachroom .bottom-text span {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.6;
+}

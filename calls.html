@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calls | Kakao Clone</title>
+  </head>
+  <body>
+    <header>
+      <section class="statusbar">
+        <div class="left">
+          <span class="clock">10:30</span>
+        </div>
+        <div class="right">
+          <img src="images/volumeoff.svg" />
+          <!-- <i class="fas fa-volume-mute"></i> -->
+          <img src="images/wifi.svg" />
+          <!-- <i class="fas fa-wifi"></i> -->
+          <i class="fas fa-signal"></i>
+          <span>100%</span>
+          <img src="images/battery.svg" />
+          <!-- <i class="fas fa-battery-three-quarters"></i> -->
+        </div>
+      </section>
+      <section class="topnav">
+        <div>
+          <a href="settings.html" class="leftest">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+        <div class="menu">
+          <a href="index.html" class="unselected">
+            <span class="title">Chats</span>
+          </a>
+          <a href="calls.html" class="selected">
+            <span class="title">Calls</span>
+          </a>
+        </div>
+        <div id="wrap">
+          <form action="" autocomplete="on">
+            <input
+              id="search"
+              name="search"
+              type="text"
+              placeholder="search.."
+            /><input id="search_submit" value="Rechercher" type="submit" />
+          </form>
+        </div>
+      </section>
+      <section class="bar">
+        <div class="selectedmenu" id="calls-selected"></div>
+      </section>
+    </header>
+    <main class="calls">
+      <div class="calllist">
+        You haven't made any calls yet.
+      </div>
+    </main>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!</span>
+      <span class="bigScreen__text2">WhatsTelegramApp for Android </span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.statusbar,
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #57b4d2;
+  color: white;
+}
+.statusbar {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+.topnav {
+  height: 50px;
+  padding: 15px 20px 5px 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.statusbar .right img {
+  width: 14px;
+  height: 14px;
+}
+.topnav .leftest {
+  margin-right: 15px;
+}
+.topnav .menu {
+  width: 350px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.menu .selected {
+  color: white;
+}
+.menu .unselected {
+  color: rgb(117, 147, 160);
+}
+.bar {
+  width: 100%;
+  height: 7px;
+  background-color: #57b4d2;
+}
+.bar .selectedmenu {
+  width: 170px;
+  height: 7px;
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.topnav #wrap {
+  /* margin: 50px 100px; */
+  /* display: inline-block; */
+  position: relative;
+  height: 30px;
+  /* float: right; */
+  padding: 0;
+  position: relative;
+}
+
+.topnav #wrap input[type="text"] {
+  height: 30px;
+  font-size: 20px;
+  display: inline-block;
+  /* font-family: "Lato"; */
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  cursor: pointer;
+}
+
+.topnav #wrap input[type="text"]:focus:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.topnav #wrap input[type="text"]:focus {
+  width: 400px;
+  z-index: 1;
+  border-bottom: 1px solid #ffffff;
+  cursor: text;
+  background-color: #57b4d2;
+  outline: none;
+}
+.topnav #wrap input[type="submit"] {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  /* color: red; */
+  /* float: right; */
+  background: url(../images/search-solid.svg) no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  /* opacity: 0.4; */
+  transition: opacity 0.4s ease;
+  margin-top: 3px;
+  outline: none;
+}

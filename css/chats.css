@@ -1,0 +1,82 @@
+.bar #chats-selected {
+  margin-left: 100px;
+}
+.chats .eachroom {
+  width: 98%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px 20px;
+  /* border-bottom: 0.5px solid rgb(221, 229, 233); */
+}
+/* :::::::left column of each chat room ::::::: */
+.chats .eachroom .left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.chats .eachroom .left .prflpic {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.chats .eachroom .left .content {
+  margin-left: 20px;
+}
+.chats .eachroom .left .content .name {
+  padding-bottom: 12px;
+  display: block;
+  font-size: 20px;
+}
+.chats .eachroom .bottom-text span,
+.chats .eachroom .timestamp {
+  font-weight: 300;
+  opacity: 0.6;
+}
+.chats .eachroom .bottom-text span {
+  font-size: 16px;
+}
+.chats .eachroom .bottom-text .not {
+  background: url(../images/notseen.svg) no-repeat;
+}
+.chats .eachroom .bottom-text .yes {
+  background: url(../images/seen.svg) no-repeat;
+}
+.chats .eachroom .bottom-text .seen {
+  width: 18px;
+  height: 10px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+.chats .eachroom .left .content .name .groupmember {
+  font-size: 18px;
+  opacity: 0.4;
+  margin: 0 3px 0 5px;
+}
+.chats .eachroom .left .content .name .groupmute {
+  width: 15px;
+  height: auto;
+  opacity: 0.4;
+}
+/* :::::::right column of each chat room::::::: */
+.chats .eachroom .right {
+  /* margin: 0px 15px 0 0; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.chats .eachroom .right .timestamp {
+  font-size: 14px;
+}
+.chats .eachroom .right .unreadmsg {
+  width: 30px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(175, 174, 174);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 3px;
+}

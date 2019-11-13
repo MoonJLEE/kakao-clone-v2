@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Chatroom | Kakao Clone</title>
+  </head>
+  <body>
+    <header>
+      <section class="statusbar">
+        <div class="left">
+          <span class="clock">10:30</span>
+        </div>
+        <div class="right">
+          <img src="images/volumeoff.svg" />
+          <!-- <i class="fas fa-volume-mute"></i> -->
+          <img src="images/wifi.svg" />
+          <!-- <i class="fas fa-wifi"></i> -->
+          <i class="fas fa-signal"></i>
+          <span>100%</span>
+          <img src="images/battery.svg" />
+          <!-- <i class="fas fa-battery-three-quarters"></i> -->
+        </div>
+      </section>
+      <section class="topnav">
+        <div>
+          <a href="index.html" class="leftest">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="left">
+          <img src="images/prflpic1.jpg" class="prflpic" />
+          <div class="content">
+            <span class="name">
+              Tracy
+            </span>
+            <div class="lastseen">last seen today at 00:45</div>
+          </div>
+        </div>
+        <div class="right">
+          <i class="fas fa-phone-volume"></i>
+          <i class="fas fa-video"></i>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </section>
+      <section class="bar"></section>
+    </header>
+    <main class="chatting">
+      <ul>
+        <span class="chatting__timestamp">Wednesday, November 13, 2019</span>
+        <li class="bubble incoming">
+          <span class="chattingcontents">
+            Thanks. Take care.
+          </span>
+          <div class="chattinginfo">
+            <span class="timestamp">23:55</span>
+          </div>
+        </li>
+        <li class="bubble sent">
+          <span class="chattingcontents">
+            You too
+          </span>
+          <div class="chattinginfo">
+            <span class="timestamp">23:56</span>
+            <div class="seen yes"></div>
+          </div>
+        </li>
+        <span class="chatting__timestamp">Today</span>
+        <li class="bubble sent">
+          <span class="chattingcontents">
+            See you tmr
+          </span>
+          <div class="chattinginfo">
+            <span class="timestamp">00:54</span>
+            <div class="not seen"></div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <div class="msging">
+      <div class="typing">
+        <div class="icon left">
+          <i class="far fa-plus-square"></i>
+        </div>
+        <div class="inputwrapper">
+          <input type="text" class="input" placeholder="Type a message" />
+        </div>
+        <div class="icon right">
+          <i class="far fa-laugh"></i>
+        </div>
+      </div>
+      <div class="voicenoting">
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!</span>
+      <span class="bigScreen__text2">WhatsTelegramApp for Android </span>
+    </div>
+  </body>
+</html>
