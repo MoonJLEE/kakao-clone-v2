@@ -58,6 +58,26 @@
     <div class="newcall">
       <i class="fas fa-phone-volume"></i>
     </div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#"><i class="fas fa-pen-fancy"></i>New chat</a>
+        <a href="#"><i class="fas fa-phone-volume"></i> &thinsp;New call</a>
+        <a href="#"><i class="fas fa-user-plus"></i>Add contact</a>
+        <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
     <div class="bigScreen">
       <span class="bigScreen__text">Please make your screen small!</span>
       <span class="bigScreen__text2">WhatsTelegramApp for Android </span>

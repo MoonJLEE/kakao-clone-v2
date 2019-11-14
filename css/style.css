@@ -6,6 +6,7 @@
 @import url("calls.css");
 @import url("settings.css");
 @import url("chattingroom.css");
+@import url("overlaymenu.css");
 
 body {
   background-color: white;
@@ -43,7 +44,7 @@ main {
   z-index: 4;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 520px) {
   .bigScreen {
     display: flex;
   }
