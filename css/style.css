@@ -7,6 +7,7 @@
 @import url("settings.css");
 @import url("chattingroom.css");
 @import url("overlaymenu.css");
+@import url("contacts.css");
 
 body {
   background-color: white;

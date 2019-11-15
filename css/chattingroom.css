@@ -25,16 +25,16 @@
 }
 /* ::::::::::::::::::::::chatroom body:::::::::::::::::::::: */
 .chatting {
-  background-image: url(../images/worn_dots.png);
-  background-repeat: repeat;
-  min-height: 1000vh;
+  padding: 30px 20px 0 20px;
+  text-align: center;
+  min-height: 200vh;
+  background-color: #f6f7f0;
+  /* background-image: url(../images/worn_dots.png);
+  background-repeat: repeat; */
   /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
-  /* height: 90%; */
-  padding: 30px 20px 0 20px;
-  text-align: center;
 }
 .chatting .chatting__timestamp {
   padding: 5px 10px;
@@ -117,27 +117,30 @@
   bottom: 20px;
   margin: 0 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .msging .typing {
-  width: 85%;
+  width: 80%;
   height: 50px;
-  margin-left: 2px;
-  padding: 0 10px;
+  margin-left: 3px;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: white;
   border-radius: 25px;
-  border: 1px solid #cbd0d5;
+  border: 1px solid #e0e0e0;
   box-shadow: 0 30px 20px -12px rgba(50, 50, 93, 0.25),
     0 18px 16px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
-.msging .inputwrapper .input {
+.msging .typing .inputwrapper {
+  margin: 0 3px;
+}
+.msging .typing .inputwrapper .input {
   background: white;
-  width: 320px;
-  font-size: 20px;
+  width: 250px;
+  font-size: 18px;
   border: none;
 }
 ::placeholder {
@@ -159,23 +162,67 @@
   align-items: center;
   box-shadow: 0 30px 20px -12px rgba(50, 50, 93, 0.25),
     0 18px 16px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  animation: glowing 5s linear infinite;
   transition: transform 2s ease-in-out;
 }
-@keyframes glowing {
-  0% {
-    box-shadow: 0 0 -10px #c4a300;
-  }
-  40% {
-    box-shadow: 0 0 20px #c4a300;
-  }
-  60% {
-    box-shadow: 0 0 20px #c4a300;
-  }
-  100% {
-    box-shadow: 0 0 -10px #c4a300;
-  }
-}
-.msging .inputwrapper .input:focus + .msging .voicenoting {
+.msging .typing .inputwrapper .input:focus + .msging .voicenoting {
   transform: rotate(45deg);
 }
+/* :::::::::::::::::::effect:::::::::::::::: */
+/* .msging .typing {
+  width: 75%;
+  position: relative;
+  background: linear-gradient(21deg, #10abff, #1beabd);
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999em;
+  box-shadow: 0 30px 20px -12px rgba(50, 50, 93, 0.25),
+    0 18px 16px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+  .msging .typing * :not(.msging span) {
+    position: relative;
+    display: inherit;
+    border-radius: inherit;
+    margin: 0;
+    border: none;
+    outline: none;
+    padding: 0 0.325em;
+    z-index: 2;
+  }
+    .msging .typing input:focus + .msging span {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+  .msging span {
+    transform: scale(0.993, 0.94);
+    transition: transform 0.5s, opacity 0.25s;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    margin: 4px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 3px #fff, 0 0 0 4px #fff, 3px -3px 30px #1beabd,
+      -3px 3px 30px #10abff;
+  }
+}
+.msging .typing .typingborderwrap {
+  background-color: white;  
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 9999em;
+  padding-left: 7px;
+  border: 2px solid red;
+}
+.msging .typing .input {
+  color: #2e3750;
+  min-width: 12em;
+  margin: 10px 0;
+}
+ */

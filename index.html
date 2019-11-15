@@ -24,7 +24,7 @@
       <section class="topnav">
         <div>
           <a href="#" class="leftest">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"
+            <span style="font-size:25px;cursor:pointer" onclick="openNav()"
               >&#9776;</span
             >
           </a>
@@ -189,15 +189,19 @@
         </li>
       </ul>
     </main>
-    <div class="newchat">
-      <i class="fas fa-pen-fancy"></i>
-    </div>
+    <a href="contacts-newchat.html">
+      <div class="newchat">
+        <i class="fas fa-pen-fancy"></i>
+      </div>
+    </a>
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
       <div class="overlay-content">
-        <a href="#"><i class="fas fa-pen-fancy"></i>New chat</a>
+        <a href="contacts-newchat.html"
+          ><i class="fas fa-pen-fancy"></i>New chat</a
+        >
         <a href="#"><i class="fas fa-phone-volume"></i> &thinsp;New call</a>
         <a href="#"><i class="fas fa-user-plus"></i>Add contact</a>
         <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
@@ -205,7 +209,7 @@
     </div>
     <script>
       function openNav() {
-        document.getElementById("myNav").style.width = "100%";
+        document.getElementById("myNav").style.width = "80%";
       }
 
       function closeNav() {
