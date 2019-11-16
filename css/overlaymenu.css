@@ -1,13 +1,13 @@
 .overlay {
-  height: 97%;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 5;
   left: 0;
   bottom: 0;
   /* background-color: rgba(10, 27, 33, 0.9); */
-  background-color: #ffffff;
-  /* background-image: url(../images/black_paper.png); */
+  /*  background-color: #ffffff; */
+  background-image: url(../images/linen.png);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -36,6 +36,7 @@
 .overlay a:hover,
 .overlay a:focus {
   color: #2196f3;
+  font-weight: 500;
 }
 
 .overlay .closebtn {

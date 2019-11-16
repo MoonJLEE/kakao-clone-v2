@@ -16,11 +16,13 @@
   font-size: 28px;
   color: yellow;
 }
-.contacts-newchat {
+.contacts-newchat,
+.contacts-newcall {
   overflow: auto;
 }
 /* ::::::::::::::::::::::::contact search:::::::::::::::::::::::: */
-.contacts-newchat input {
+.contacts-newchat input,
+.contacts-newcall input {
   all: unset;
   width: 90%;
   border-radius: 5px;
@@ -40,41 +42,47 @@
   width: 100%;
   /* height: 90px; */
   display: flex;
+  justify-content: space-between;
   padding: 15px 10px 10px 25px;
 }
-.contacts-newchat .eachroom .left {
+.contacts-newchat .eachroom .left,
+.contacts-newcall .eachroom .left {
   width: 100%;
   display: flex;
 }
-.contacts-newchat .eachroom .left .prflpic {
+.contacts-newchat .eachroom .left .prflpic,
+.contacts-newcall .eachroom .left .prflpic {
   width: 36px;
   height: 36px;
   border-radius: 18px;
 }
-.contacts-newchat .eachroom .left .content {
+.contacts-newchat .eachroom .left .content,
+.contacts-newcall .eachroom .left .content {
   width: 100%;
   margin-left: 10px;
   padding-bottom: 10px;
   border-bottom: 0.5px solid rgb(206, 206, 206);
 }
-.contacts-newchat .eachroom .left .content .name {
+.contacts-newchat .eachroom .left .content .name,
+.contacts-newcall .eachroom .left .content .name {
   padding-bottom: 5px;
   display: block;
   font-size: 20px;
 }
-.contacts-newchat .eachroom .left .content .lastseen {
+.contacts-newchat .eachroom .left .content .lastseen,
+.contacts-newcall .eachroom .left .content .lastseen {
   font-size: 13px;
   font-weight: 300;
   opacity: 0.5;
 }
-/* :::::::::::::::::::ckeckbox, right part of contact list:::::::::::::::::::: */
+/* :::::::::::::::::::checkbox, right part of contact list:::::::::::::::::::: */
 .contacts-newchat .rightlist {
   width: 10%;
   /* height: 100%; */
   /* padding-left: 70px; */
   /* border: 1px solid green; */
   display: inline-block;
-  color: #ffffff;
+  color: #2196f3;
 }
 .contacts-newchat .rightlist .container {
   display: block;
@@ -138,4 +146,20 @@
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+/* :::::::::::::::::::newcall page:::::::::::::::::::: */
+.contacts-newcall .eachroom {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px 10px 25px;
+}
+.contacts-newcall .eachroom .voiceorvideo {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-newcall .eachroom .voiceorvideo i {
+  font-size: 25px;
+  color: #2196f3;
+  margin: 0 20px;
 }

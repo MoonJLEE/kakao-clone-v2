@@ -49,6 +49,9 @@
   background-size: cover;
   background-position: center;
 }
+.chats .eachroom .bottom-text i {
+  opacity: 0.6;
+}
 .chats .eachroom .left .content .name .groupmember {
   font-size: 18px;
   opacity: 0.4;
