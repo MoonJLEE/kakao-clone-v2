@@ -45,9 +45,15 @@
   opacity: 0.6;
 }
 .settings .eachroom-me .right span {
+<<<<<<< HEAD
   font-size: 20px;
   color: black;
   opacity: 0.4;
+=======
+  font-size: 25px;
+  color: black;
+  opacity: 0.3;
+>>>>>>> master
   margin: 0 30px;
 }
 /* ::::::::::::::::::::settings list:::::::::::::::::::: */

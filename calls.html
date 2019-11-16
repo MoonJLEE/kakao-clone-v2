@@ -15,19 +15,18 @@
         </div>
         <div class="right">
           <img src="images/volumeoff.svg" />
-          <!-- <i class="fas fa-volume-mute"></i> -->
           <img src="images/wifi.svg" />
-          <!-- <i class="fas fa-wifi"></i> -->
           <i class="fas fa-signal"></i>
           <span>100%</span>
           <img src="images/battery.svg" />
-          <!-- <i class="fas fa-battery-three-quarters"></i> -->
         </div>
       </section>
       <section class="topnav">
         <div>
-          <a href="settings.html" class="leftest">
-            <i class="fas fa-bars"></i>
+          <a href="#" class="leftest">
+            <span style="font-size:25px;cursor:pointer" onclick="openNav()"
+              >&#9776;</span
+            >
           </a>
         </div>
         <div class="menu">
@@ -58,9 +57,31 @@
         You haven't made any calls yet.
       </div>
     </main>
+    <a href="contacts-newcall.html">
     <div class="newcall">
       <i class="fas fa-phone-volume"></i>
+    </a>
     </div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="contacts-newchat.html"><i class="fas fa-pen-fancy"></i>New chat</a>
+        <a href="contacts-newcall.html"><i class="fas fa-phone-volume"></i> &thinsp;New call</a>
+        <a href="#"><i class="fas fa-user-plus"></i>Add contact</a>
+        <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
     <div class="bigScreen">
       <span class="bigScreen__text">Please make your screen small!</span>
       <span class="bigScreen__text2">WhatsTelegramApp for Android </span>
