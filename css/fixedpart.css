@@ -30,10 +30,13 @@ header {
   margin-right: 15px;
 }
 .topnav .menu {
-  width: 350px;
+  width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.topnav .menu .title {
+  width: 35%;
 }
 .menu .selected {
   color: white;
@@ -47,7 +50,7 @@ header {
   background-color: #57b4d2;
 }
 .bar .selectedmenu {
-  width: 170px;
+  width: 25%;
   height: 7px;
   background: #ada996; /* fallback for old browsers */
   background: -webkit-linear-gradient(

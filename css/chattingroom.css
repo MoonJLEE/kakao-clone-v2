@@ -1,6 +1,6 @@
 /* :::::::::::variation of navigation bar only for chatroom::::::::::: */
 .topnav .left {
-  width: 280px;
+  width: 50%;
   display: flex;
 }
 .topnav .left .prflpic {
@@ -9,7 +9,7 @@
   border-radius: 18px;
 }
 .topnav .left .content {
-  margin-left: 10px;
+  margin-left: 3%;
 }
 .topnav .left .content .name {
   padding-bottom: 5px;
@@ -20,8 +20,13 @@
   font-size: 14px;
   font-weight: 300;
 }
+.topnav .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
 .topnav .right i {
-  margin: 0 0 0 25px;
+  margin: 0 7%;
 }
 /* ::::::::::::::::::::::chatroom body:::::::::::::::::::::: */
 .chatting {
@@ -50,13 +55,13 @@
   font-size: 14px;
   font-weight: 300;
 }
-.chatting .bubble {
+.chatting ul .bubble {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   padding: 10px;
   border-radius: 15px;
-  margin: 20px auto;
+  margin: 20px 27%;
   position: relative;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
