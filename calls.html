@@ -8,7 +8,7 @@
     <title>Calls | Kakao Clone</title>
   </head>
   <body>
-    <header>
+    <header id="calls-header">
       <section class="statusbar">
         <div class="left">
           <span class="clock">10:30</span>
@@ -58,7 +58,7 @@
       </div>
     </main>
     <a href="contacts-newcall.html">
-    <div class="newcall">
+    <div class="newcall" id="calls-newcallball">
       <i class="fas fa-phone-volume"></i>
     </a>
     </div>
@@ -74,14 +74,20 @@
       </div>
     </div>
     <script>
-      function openNav() {
-        document.getElementById("myNav").style.width = "80%";
-      }
-
-      function closeNav() {
-        document.getElementById("myNav").style.width = "0%";
-      }
-    </script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "75%";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
+          document.getElementById("calls-header").style.opacity = ".2";
+          document.getElementById("calls-newcallball").style.opacity = ".1";          
+        }
+  
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+          document.body.style.backgroundColor = "white";
+          document.getElementById("calls-header").style.opacity = "1";
+          document.getElementById("calls-newcallball").style.opacity = "1";          
+        }
+      </script>
     <div class="bigScreen">
       <span class="bigScreen__text">Please make your screen small!</span>
       <span class="bigScreen__text2">WhatsTelegramApp for Android </span>

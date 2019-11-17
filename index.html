@@ -8,7 +8,7 @@
     <title>Chats | Kakao Clone</title>
   </head>
   <body>
-    <header>
+    <header id="chats-header">
       <section class="statusbar">
         <div class="left">
           <span class="clock">10:30</span>
@@ -23,7 +23,7 @@
       </section>
       <section class="topnav">
         <div>
-          <a href="#" class="leftest">
+          <a href="#" class="leftest hamburger">
             <span style="font-size:25px;cursor:pointer" onclick="openNav()"
               >&#9776;</span
             >
@@ -183,14 +183,14 @@
               <span class="timestamp">
                 11/11/19
               </span>
-              <span class="unreadmsg">91</span>
+              <span class="unreadmsg" id="chats-unreadmsg">91</span>
             </div>
           </div>
         </li>
       </ul>
     </main>
     <a href="contacts-newchat.html">
-      <div class="newchat">
+      <div class="newchat" id="chats-newchatball">
         <i class="fas fa-pen-fancy"></i>
       </div>
     </a>
@@ -211,11 +211,19 @@
     </div>
     <script>
       function openNav() {
-        document.getElementById("myNav").style.width = "80%";
+        document.getElementById("myNav").style.width = "75%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.8)";
+        document.getElementById("chats-header").style.opacity = ".2";
+        document.getElementById("chats-newchatball").style.opacity = ".1";
+        document.getElementById("chats-unreadmsg").style.opacity = ".1";
       }
 
       function closeNav() {
         document.getElementById("myNav").style.width = "0%";
+        document.body.style.backgroundColor = "white";
+        document.getElementById("chats-header").style.opacity = "1";
+        document.getElementById("chats-newchatball").style.opacity = "1";
+        document.getElementById("chats-unreadmsg").style.opacity = "1";
       }
     </script>
     <div class="bigScreen">
