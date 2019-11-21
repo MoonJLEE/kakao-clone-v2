@@ -1,6 +1,9 @@
 .bar #chats-selected {
   margin-left: 25%;
 }
+.chats {
+  min-height: 200vh;
+}
 .chats .eachroom {
   width: 98%;
   height: 100px;

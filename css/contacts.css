@@ -1,20 +1,28 @@
 .topnav .contacts {
-  width: 380px;
+  width: 360px;
   text-align: left;
+  white-space: nowrap;
   /* margin-left: 15px; */
 }
-/* .topnav .right img {
-  width: 40px;
+.topnav .right img {
+  width: 30px;
   height: auto;
-  margin-right: 15px;
-} */
+  margin: 0 5px;
+}
 /* .contacts-newchat {
   display: flex;
   justify-content: space-around;
 } */
 .topnav #selectnext {
-  font-size: 28px;
-  color: yellow;
+  font-size: 14px;
+  font-weight: 300;
+  /* color: rgb(255, 251, 0); */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.topnav #selectnext span {
+  text-align: center;
 }
 .contacts-newchat,
 .contacts-newcall {

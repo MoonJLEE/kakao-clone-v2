@@ -128,8 +128,8 @@
 .msging .typing {
   width: 80%;
   height: 50px;
-  margin-left: 3px;
-  padding: 0 15px;
+  margin-left: 1%;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,11 +140,12 @@
     0 18px 16px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 .msging .typing .inputwrapper {
-  margin: 0 3px;
+  width: 95%;
+  margin: 0 3%;
 }
 .msging .typing .inputwrapper .input {
   background: white;
-  width: 250px;
+  width: 100%;
   font-size: 18px;
   border: none;
 }
@@ -153,7 +154,7 @@
 }
 .msging .typing i {
   font-size: 18px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .msging .voicenoting {
   width: 50px;
@@ -168,9 +169,30 @@
   box-shadow: 0 30px 20px -12px rgba(50, 50, 93, 0.25),
     0 18px 16px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   transition: transform 2s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
-.msging .typing .inputwrapper .input:focus + .msging .voicenoting {
+.msging .voicenoting::after {
   transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: red;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.msging .typing .inputwrapper input:focus + .msging .voicenoting::after {
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: red;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /* :::::::::::::::::::effect:::::::::::::::: */
 /* .msging .typing {
