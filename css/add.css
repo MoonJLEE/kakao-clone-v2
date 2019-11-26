@@ -1,0 +1,38 @@
+/* ::::::::::::::::::::::::ID search:::::::::::::::::::::::: */
+.add input {
+  all: unset;
+  width: 90%;
+  border-radius: 5px;
+  background: rgb(233, 233, 233);
+  font-size: 18px;
+  margin: 15px 15px 20px 20px;
+  padding: 5px 0 5px 10px;
+}
+.add .find__header-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 10px;
+}
+
+.add .header-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add .header-btn__title {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+}
+
+.add .header-btn__icon {
+  font-size: 17px;
+  color: rgb(99, 99, 99);
+}
+.add .find__header-list img {
+  width: 35px;
+  height: auto;
+  opacity: 0.6;
+}
